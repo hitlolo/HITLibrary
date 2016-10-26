@@ -1,0 +1,16 @@
+PODS:
+  - HITLibrary (0.1.0)
+
+DEPENDENCIES:
+  - HITLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  HITLibrary:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HITLibrary: 846de55a8168db85441437fd262ce43becb10938
+
+PODFILE CHECKSUM: 3bfee9c0d7ae8561e8bcbb68e1ba309e81d5f0dd
+
+COCOAPODS: 1.1.1

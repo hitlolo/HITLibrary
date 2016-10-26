@@ -1,0 +1,6 @@
+framework module HITLibrary {
+  umbrella header "HITLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}
