@@ -30,8 +30,20 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'HITLibrary/Classes/**/*'
-  
+  # s.source_files = 'HITLibrary/Classes/**/*'
+
+  s.subspec 'UIKitCategory' do |UIKitCategory|
+    UIKitCategory.source_files = 'Pod/Classes/UIKitCategory/**/*'
+    UIKitCategory.public_header_files = 'Pod/Classes/UIKitCategory/**/*.h'
+  end
+
+  s.subspec 'HITMarqueeLabel' do |HITMarqueeLabel|
+    HITMarqueeLabel.source_files = 'Pod/Classes/HITMarqueeLabel/**/*'
+    HITMarqueeLabel.public_header_files = 'Pod/Classes/HITMarqueeLabel/**/*.h'
+    # ui.resource = "Pod/Assets/MLSUIKitResource.bundle"
+    HITMarqueeLabel.dependency 'HITLibrary/UIKitCategory'
+  end
+
   # s.resource_bundles = {
   #   'HITLibrary' => ['HITLibrary/Assets/*.png']
   # }
