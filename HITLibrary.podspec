@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HITLibrary'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'HITLibrary.'
 
 # This description is used to generate tags and improve search results.
@@ -32,16 +32,16 @@ TODO: Add long description of the pod here.
 
   # s.source_files = 'HITLibrary/Classes/**/*'
 
-  s.subspec 'UIKitCategory' do |UIKitCategory|
-    UIKitCategory.source_files = 'Pod/Classes/UIKitCategory/**/*'
-    UIKitCategory.public_header_files = 'Pod/Classes/UIKitCategory/**/*.h'
+  s.subspec 'UIKitCategory' do |uikit|
+    uikit.source_files = 'Pod/Classes/UIKitCategory/**/*'
+    uikit.public_header_files = 'Pod/Classes/UIKitCategory/**/*.h'
   end
 
-  s.subspec 'HITMarqueeLabel' do |HITMarqueeLabel|
-    HITMarqueeLabel.source_files = 'Pod/Classes/HITMarqueeLabel/**/*'
-    HITMarqueeLabel.public_header_files = 'Pod/Classes/HITMarqueeLabel/**/*.h'
+  s.subspec 'HITMarqueeLabel' do |hitlabel|
+    hitlabel.source_files = 'Pod/Classes/HITMarqueeLabel/**/*'
+    hitlabel.public_header_files = 'Pod/Classes/HITMarqueeLabel/**/*.h'
     # ui.resource = "Pod/Assets/MLSUIKitResource.bundle"
-    HITMarqueeLabel.dependency 'HITLibrary/UIKitCategory'
+    hitlabel .dependency 'HITLibrary/UIKitCategory'
   end
 
   # s.resource_bundles = {
