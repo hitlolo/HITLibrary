@@ -1,5 +1,10 @@
 PODS:
-  - HITLibrary (0.1.0)
+  - HITLibrary (0.1.1):
+    - HITLibrary/HITMarqueeLabel (= 0.1.1)
+    - HITLibrary/UIKitCategory (= 0.1.1)
+  - HITLibrary/HITMarqueeLabel (0.1.1):
+    - HITLibrary/UIKitCategory
+  - HITLibrary/UIKitCategory (0.1.1)
 
 DEPENDENCIES:
   - HITLibrary (from `../`)
@@ -9,7 +14,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HITLibrary: 846de55a8168db85441437fd262ce43becb10938
+  HITLibrary: 473b62cf4ee295b323d70a652e91183f2df56e4d
 
 PODFILE CHECKSUM: 3bfee9c0d7ae8561e8bcbb68e1ba309e81d5f0dd
 

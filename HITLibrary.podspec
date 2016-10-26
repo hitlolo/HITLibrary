@@ -33,13 +33,13 @@ TODO: Add long description of the pod here.
   # s.source_files = 'HITLibrary/Classes/**/*'
 
   s.subspec 'UIKitCategory' do |uikit|
-    uikit.source_files = 'Pod/Classes/UIKitCategory/**/*'
-    uikit.public_header_files = 'Pod/Classes/UIKitCategory/**/*.h'
+    uikit.source_files = 'HITLibrary/Classes/UIKitCategory/**/*'
+    uikit.public_header_files = 'HITLibrary/Classes/UIKitCategory/**/*.h'
   end
 
   s.subspec 'HITMarqueeLabel' do |hitlabel|
-    hitlabel.source_files = 'Pod/Classes/HITMarqueeLabel/**/*'
-    hitlabel.public_header_files = 'Pod/Classes/HITMarqueeLabel/**/*.h'
+    hitlabel.source_files = 'HITLibrary/Classes/HITMarqueeLabel/**/*'
+    hitlabel.public_header_files = 'HITLibrary/Classes/HITMarqueeLabel/**/*.h'
     # ui.resource = "Pod/Assets/MLSUIKitResource.bundle"
     hitlabel .dependency 'HITLibrary/UIKitCategory'
   end

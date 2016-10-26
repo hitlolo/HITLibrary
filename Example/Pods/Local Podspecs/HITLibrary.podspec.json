@@ -1,9 +1,9 @@
 {
   "name": "HITLibrary",
-  "version": "0.1.0",
-  "summary": "A short description of HITLibrary.",
+  "version": "0.1.1",
+  "summary": "HITLibrary.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/HITLibrary",
+  "homepage": "https://github.com/hitlolo/HITLibrary",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,27 @@
     "Lolo": "hitlolo@qq.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/HITLibrary.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/hitlolo/HITLibrary.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "HITLibrary/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "UIKitCategory",
+      "source_files": "Pod/Classes/UIKitCategory/**/*",
+      "public_header_files": "Pod/Classes/UIKitCategory/**/*.h"
+    },
+    {
+      "name": "HITMarqueeLabel",
+      "source_files": "Pod/Classes/HITMarqueeLabel/**/*",
+      "public_header_files": "Pod/Classes/HITMarqueeLabel/**/*.h",
+      "dependencies": {
+        "HITLibrary/UIKitCategory": [
+
+        ]
+      }
+    }
+  ]
 }
