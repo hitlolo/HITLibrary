@@ -1,0 +1,6 @@
+use_frameworks!
+target 'HITLibrary_Tests' do
+  pod 'HITLibrary', :path => '../'
+  
+  
+end
